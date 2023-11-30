@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Facebook Post Box</title>
+</head>
+<body>
+  <div class="container">
+    <div class="post-box">
+      <div class="user-info">
+        <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+        <div class="user-text">
+          <p class="user-name">John Doe</p>
+          <p class="user-status">What's on your mind?</p>
+        </div>
+      </div>
+      <textarea id="postContent" placeholder="Share your thoughts..."></textarea>
+      <div class="options">
+        <div class="option" onclick="chooseOption('live-video')">
+          <img src="live-video-icon.png" alt="Live Video">
+          <span>Live Video</span>
+        </div>
+        <div class="option" onclick="chooseOption('photo-video')">
+          <img src="photo-video-icon.png" alt="Photo/Video">
+          <span>Photo/Video</span>
+        </div>
+        <div class="option" onclick="chooseOption('feelings-activity')">
+          <img src="feelings-icon.png" alt="Feelings/Activity">
+          <span>Feeling/Activity</span>
+        </div>
+      </div>
+      <button onclick="post()">Post</button>
+    </div>
+    <div id="posts"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
